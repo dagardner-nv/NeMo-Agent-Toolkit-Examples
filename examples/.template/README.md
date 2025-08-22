@@ -22,16 +22,22 @@ This example demonstrates [DESCRIPTION_OF_WHAT_YOUR_EXAMPLE_DOES] using the NVID
 
 ## Table of Contents
 
-- [Key Features](#key-features)
-- [Installation and Setup](#installation-and-setup)
-  - [Install this Workflow:](#install-this-workflow)
-  - [Set Up API Keys](#set-up-api-keys)
-  - [Run the Workflow](#run-the-workflow)
-- [Deployment-Oriented Setup](#deployment-oriented-setup)
-  - [Build the Docker Image](#build-the-docker-image)
-  - [Run the Docker Container](#run-the-docker-container)
-  - [Test the API](#test-the-api)
-  - [Expected API Output](#expected-api-output)
+- [EXAMPLE\_TITLE](#example_title)
+  - [Table of Contents](#table-of-contents)
+  - [Key Features](#key-features)
+  - [Installation and Setup](#installation-and-setup)
+    - [Install this Workflow:](#install-this-workflow)
+    - [Set Up API Keys](#set-up-api-keys)
+    - [Run the Workflow](#run-the-workflow)
+  - [Deployment-Oriented Setup](#deployment-oriented-setup)
+    - [Build the Docker Image](#build-the-docker-image)
+    - [Run the Docker Container](#run-the-docker-container)
+    - [Test the API](#test-the-api)
+    - [Expected API Output](#expected-api-output)
+  - [Customization Guide](#customization-guide)
+    - [Adding New Functions](#adding-new-functions)
+    - [Modifying the Agent](#modifying-the-agent)
+    - [Using Different Models](#using-different-models)
 
 ---
 
@@ -48,8 +54,6 @@ This example demonstrates [DESCRIPTION_OF_WHAT_YOUR_EXAMPLE_DOES] using the NVID
 
 ## Installation and Setup
 
-If you have not already done so, follow the instructions in the [Install Guide](../../../docs/source/quick-start/installing.md#install-from-source) to create the development environment and install the NeMo Agent toolkit.
-
 ### Install this Workflow:
 
 From the root directory of the NeMo Agent toolkit library, run the following commands:
@@ -59,7 +63,9 @@ uv pip install -e examples/EXAMPLE_CATEGORY/EXAMPLE_NAME
 ```
 
 ### Set Up API Keys
-If you have not already done so, follow the [Obtaining API Keys](../../../docs/source/quick-start/installing.md#obtaining-api-keys) instructions to obtain an NVIDIA API key. You need to set your NVIDIA API key as an environment variable to access NVIDIA AI services:
+Depending on which workflows you are running, you may need to obtain API keys from the respective services. Most NeMo Agent toolkit workflows require an NVIDIA API key defined with the `NVIDIA_API_KEY` environment variable. An API key can be obtained by visiting [`build.nvidia.com`](https://build.nvidia.com/) and creating an account.
+
+Some workflows may also require an OpenAI API key. Visit [OpenAI](https://openai.com/) and create an account. Navigate to your account settings to obtain your OpenAI API key.
 
 ```bash
 export NVIDIA_API_KEY=<YOUR_API_KEY>
