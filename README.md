@@ -56,12 +56,14 @@ All examples require a local clone of this repository, UV, and a Python 3.11+ en
 1. Create a new environment using the following command:
 
    ```bash
-   uv venv --python 3.12 --seed .venv
+   uv venv --python 3.13 --seed .venv
    source .venv/bin/activate
+
+   uv sync --dev
    ```
 
    > [!NOTE]
-   > Python 3.11 is also supported simply replace `3.12` with `3.11` in the `uv` command above.
+   > Python 3.11 & 3.12 are also supported simply replace `3.13` with `3.11` or `3.12` in the `uv` command above.
 
 To run an example, navigate to the example directory and follow the instructions in the README.
 
