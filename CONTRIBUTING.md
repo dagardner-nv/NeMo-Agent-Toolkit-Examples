@@ -51,7 +51,7 @@ If you have found a bug in an example, please open up an issue to report the bug
 ## Example Requirements
 
 ### Dependencies
-The example should specify all its dependencies in the `pyproject.toml` file. The versions of all dependencies, including NAT, should specify at least 2 digit (for example `nvidia-nat~=1.2`, not `nvidia-nat==1` or `nvidia-nat>=1`). Each dependency should have a license that is compatible with the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0) used by this repository.
+The example should specify all its dependencies in the `pyproject.toml` file. The versions of all dependencies, including NeMo Agent toolkit, should specify at least 2 digit (for example `nvidia-nat~=1.2`, not `nvidia-nat==1` or `nvidia-nat>=1`). Each dependency should have a license that is compatible with the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0) used by this repository.
 
 ### Organization
 Examples should follow a specified structure to maintain consistency across the repository, the `nat workflow create` command should be used to generate the example directory structure. The recommended structure is:
