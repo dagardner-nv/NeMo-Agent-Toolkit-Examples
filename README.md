@@ -35,7 +35,7 @@ This repository contains community examples for the [NVIDIA NeMo Agent Toolkit](
 
 Each example is a self-contained directory that contains a README with instructions for running the example.
 
-All examples require a local clone of this repository, UV, and a Python 3.11+ environment. Please follow the instructions below to get started.
+All examples require a local clone of this repository, uv, and a Python 3.11+ environment. Please follow the instructions below to get started.
 
 1. Clone the repository
 
@@ -51,7 +51,7 @@ All examples require a local clone of this repository, UV, and a Python 3.11+ en
    git lfs pull
    ```
 
-1. Install UV using the instructions [here](https://docs.astral.sh/uv/getting-started/installation/).
+1. Install uv using the instructions [here](https://docs.astral.sh/uv/getting-started/installation/).
 
 1. Create a new environment using the following command:
 
